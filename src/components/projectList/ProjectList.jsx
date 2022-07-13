@@ -29,7 +29,7 @@ export default function ProjectList() {
                  description={repo.description}
                  html_url={repo.html_url}
                  created_at={repo.created_at}
-                 updated_at={repo.updated_at}
+                 updated_at={repo.pushed_at}
                  />
             );}
         )}
