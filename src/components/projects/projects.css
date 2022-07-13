@@ -1,0 +1,30 @@
+.p{
+    display: flex;
+    flex-direction: column;
+    width : 30%;
+    height: 45vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px;
+}
+.p-name{
+    padding-top: 20px;
+    height : 30%;
+    font: 20px solid;
+    background-color: rgb(243, 242, 242);
+}
+.p-desc{
+margin: 10px;
+height: 20%;
+}
+.p-dates{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 480px)  {
+    .p{
+        margin: 10px;
+    }
+}
