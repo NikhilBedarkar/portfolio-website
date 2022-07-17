@@ -20,7 +20,7 @@ export default function Projects(props) {
         <p id="p-updated">{dateFormat(props.updated_at, "mmmm dS, yyyy")}</p>
            </div>
       </div>
-      <div className="p-button"><button onClick={() => openInNewTab(props.html_url)}>View Project</button></div>
+      <div className="p-button"><button onClick={() => openInNewTab(props.html_url)} className="p-btn">View Project</button></div>
       </div>
   )
 }

@@ -23,6 +23,15 @@ height: 20%;
     margin: 0 20px;
 }
 
+.p-btn{
+    border: none;
+    padding: 15px;
+    background-color: #7B1FA2;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 480px)  {
     .p{
         margin: 10px;

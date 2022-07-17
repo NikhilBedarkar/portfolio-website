@@ -1,6 +1,15 @@
 import "./intro.css";
+import downloadIcon from "../../img/download.png"
+
 
 const Intro = () => {
+
+const downloadResume=(e) =>{
+  console.log("click");
+  e.preventDefault();
+  window.open("https://drive.google.com/uc?id=1ACz6GIjqjyLOipwWwU5l3NhiqGOo_5eK&export=download", '_blank', 'noopener,noreferrer');
+}
+
   return (
     <div className="i">
       <div className="i-left">
@@ -17,6 +26,7 @@ const Intro = () => {
             I involved in SDLC from software development to deployment in production using modern tools. 
           </p>
         </div>
+        <button id="resume" className="i-resumeBtn" onClick={(e)=>downloadResume(e)} ><img src={downloadIcon} alt="" className="i-icon" />Resume</button>
       </div>
       <div className="i-right">
         <div className="i-bg"></div>

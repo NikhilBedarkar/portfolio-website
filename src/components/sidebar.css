@@ -1,0 +1,10 @@
+.sidebar{
+  position: fixed;
+    background-color: antiquewhite;
+    width: 250px;
+    height: 100vh;
+    margin-bottom: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+  

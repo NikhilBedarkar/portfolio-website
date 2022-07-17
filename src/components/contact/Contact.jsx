@@ -3,7 +3,7 @@ import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import {  useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,10 +15,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_rrvnzco",
-        "template_3v5nih4",
+        "service_vw1ddeo",
+        "template_vx10kb9",
         formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
+        "BRpGkFGI-4qd4J-ed"
       )
       .then(
         (result) => {
@@ -44,7 +44,7 @@ const Contact = () => {
             <input  type="text" placeholder="Subject" name="user_subject" />
             <input  type="text" placeholder="Email" name="user_email" />
             <textarea rows="5" placeholder="Message" name="message" />
-            <button>Submit</button>
+            <button className="c-formSubmitbtn">Submit</button>
             {done && "Thank you..."}
           </form>
         </div>
